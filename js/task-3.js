@@ -6,12 +6,11 @@ class StringBuilder{
     getValue() {
         return this.#value;
     }
-    padEnd(str) {
-        return this.#value.push(str);
-    }
+    
     padStart(str) {
         this.#value = `${str}${this.#value}`;
     }
+    
     padEnd(str) {
     this.#value += str;
   }
